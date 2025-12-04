@@ -1,74 +1,264 @@
 ---
-title: Welcome to Plant Store API
-subtitle: Everything you need to build plant retail experiences
-slug: welcome
+title: Deel for Developers
+description: Build global payroll, HR, and compliance experiences with the Deel API.
+layout: page
+hide-toc: true
+hide-nav-links: true
+hide-feedback: true
 ---
 
-The Plant Store API provides a complete platform for building plant retail applications. From catalog management and inventory tracking to order processing and customer relationships, our API handles the complexity so you can focus on creating great experiences.
+<div className="deel-docs-page">
 
-## Quick links
+  {/* HERO */}
 
-<CardGroup cols={2}>
-  <Card
-    title="Overview"
-    icon="duotone book-open"
-    href="/overview"
-  >
-    Understand what you can build with the Plant Store API
-  </Card>
-  <Card
-    title="Quickstart"
-    icon="duotone rocket"
-    href="/quickstart"
-  >
-    Make your first API request in minutes
-  </Card>
-  <Card
-    title="Tutorials"
-    icon="duotone book-sparkles"
-    href="/searching-plants"
-  >
-    Step-by-step guides for common workflows
-  </Card>
-  <Card
-    title="API Reference"
-    icon="duotone code"
-    href="/api-reference"
-  >
-    Complete endpoint documentation and schemas
-  </Card>
-</CardGroup>
+  <section className="deel-hero">
+    <div className="deel-hero-left">
+      <span className="deel-pill">Deel Developer Platform</span>
 
-## Core capabilities
+      <h1 className="deel-hero-title">
+        Build global people products <br />without borders.
+      </h1>
 
-Build complete plant retail operations with these integrated capabilities:
+      <p className="deel-hero-subtitle">
+        Use Deel’s APIs to hire, pay, and manage talent in 150+ countries.
+        Turn complex payroll, HR, and compliance into a clean developer
+        experience your product team will love.
+      </p>
 
-| Capability | What you can do |
-|------------|-----------------|
-| **Plant management** | Organize your catalog with categories, tags, and rich metadata |
-| **Order processing** | Handle the complete lifecycle from cart to delivery |
-| **Customer management** | Build relationships with profiles, preferences, and history |
-| **Inventory tracking** | Maintain accurate stock with real-time updates and alerts |
+      <div className="deel-hero-actions">
+        <a
+          href="/docs/getting-started"
+          className="deel-btn deel-btn-primary"
+        >
+          Get started in the docs
+        </a>
+        <a
+          href="/api"
+          className="deel-btn deel-btn-ghost"
+        >
+          View API reference
+        </a>
+      </div>
 
-<Tip>
-New to the Plant Store API? Start with the [Overview](/overview) to understand the platform, then follow the [Quickstart](/quickstart) to make your first API call.
-</Tip>
+      <ul className="deel-hero-metadata">
+        <li>150+ countries</li>
+        <li>Payroll, HR & compliance APIs</li>
+        <li>Enterprise-grade security</li>
+      </ul>
+    </div>
 
-## What you can build
+    <div className="deel-hero-right">
+      <div className="deel-hero-surface">
+        <div className="deel-hero-badge">
+          <span className="deel-dot deel-dot-yellow" />
+          Live worker sync
+        </div>
 
-- **E-commerce websites** - Online storefronts with real-time inventory and checkout
-- **Mobile applications** - Native iOS and Android shopping experiences
-- **Inventory systems** - Multi-location stock tracking and management
-- **Admin dashboards** - Internal tools for catalog and order management
+        <div className="deel-code-card">
+          <header className="deel-code-card-header">
+            <span className="deel-code-label">Create worker</span>
+            <span className="deel-code-chip">POST /v1/workers</span>
+          </header>
 
-## Get support
+          <pre className="deel-code-block">
+{`curl https://api.deel.com/v1/workers \\
+  -H "Authorization: Bearer $DEEL_API_KEY" \\
+  -d '{
+    "firstName": "Alex",
+    "lastName": "Rivera",
+    "country": "NL",
+    "type": "contractor"
+  }'`}
+          </pre>
+        </div>
 
-Have questions or need help? We're here for you:
+        <div className="deel-hero-stats">
+          <div className="deel-stat-card">
+            <span className="deel-stat-label">Payroll processed</span>
+            <span className="deel-stat-value">$17.3B+</span>
+          </div>
+          <div className="deel-stat-card">
+            <span className="deel-stat-label">Businesses on Deel</span>
+            <span className="deel-stat-value">35,000+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-- **Documentation issues** - [Open an issue on GitHub](https://github.com/fern-api/docs-starter-openapi/issues)
-- **General support** - [Email our team](mailto:support+plantstore@buildwithfern.com)
-- **Community** - [Join our Slack](https://join.slack.com/t/fern-community/shared_invite/zt-2q7ev4mki-mhO5anKslwRowp4oExWf4A)
+  {/* SECTION: VALUE PROPS */}
 
----
+  <section className="deel-section">
+    <header className="deel-section-header">
+      <h2>Everything you need to ship global people features</h2>
+      <p>
+        Plug Deel into your product to unlock hiring, payroll, and compliance
+        for teams everywhere. Start simple, scale to thousands of workers.
+      </p>
+    </header>
 
-<Markdown src="/snippets/note.mdx" />
+    <div className="deel-grid deel-grid-3">
+      <article className="deel-card">
+        <div className="deel-card-icon">
+          <span className="deel-pill-icon">API</span>
+        </div>
+        <h3>Unified people & payroll APIs</h3>
+        <p>
+          Access workers, contracts, payroll, time off, and more from a single,
+          well-structured API surface designed for product teams.
+        </p>
+        <ul className="deel-card-list">
+          <li>Standardized resources and webhooks</li>
+          <li>Support for contractors, employees, and EOR</li>
+          <li>Consistent errors and pagination</li>
+        </ul>
+      </article>
+
+      <article className="deel-card">
+        <div className="deel-card-icon">
+          <span className="deel-pill-icon">⚖️</span>
+        </div>
+        <h3>Compliance handled for you</h3>
+        <p>
+          Build with confidence on top of Deel’s global compliance engine,
+          backed by in-country experts and local entities.
+        </p>
+        <ul className="deel-card-list">
+          <li>150+ countries supported</li>
+          <li>Tax, benefits, and filings abstracted away</li>
+          <li>Audit-ready logs and permissioning</li>
+        </ul>
+      </article>
+
+      <article className="deel-card">
+        <div className="deel-card-icon">
+          <span className="deel-pill-icon">💸</span>
+        </div>
+        <h3>Delightful worker experiences</h3>
+        <p>
+          Keep your UI on-brand while Deel powers onboarding, payouts, and
+          self-serve worker portals in the background.
+        </p>
+        <ul className="deel-card-list">
+          <li>Flexible integration patterns</li>
+          <li>Localized experiences for workers</li>
+          <li>Built-in notifications and status updates</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  {/* SECTION: GET STARTED FLOW */}
+
+  <section className="deel-section deel-section-surface">
+    <header className="deel-section-header">
+      <h2>Get started in three simple steps</h2>
+      <p>
+        Spin up a sandbox, make your first API call, and ship a proof of
+        concept in a single sprint.
+      </p>
+    </header>
+
+    <ol className="deel-steps">
+      <li className="deel-step">
+        <div className="deel-step-badge">1</div>
+        <div className="deel-step-body">
+          <h3>Create your developer account</h3>
+          <p>
+            Sign in to the Deel Developer Portal to generate API keys, manage
+            webhooks, and view request logs.
+          </p>
+          <a href="https://developer.deel.com" className="deel-link">
+            Open the Developer Portal →
+          </a>
+        </div>
+      </li>
+
+      <li className="deel-step">
+        <div className="deel-step-badge">2</div>
+        <div className="deel-step-body">
+          <h3>Connect to sandbox</h3>
+          <p>
+            Use our sandbox environment to simulate workers, contracts, and
+            payroll runs without touching production data.
+          </p>
+          <a href="/docs/authentication" className="deel-link">
+            Read the authentication guide →
+          </a>
+        </div>
+      </li>
+
+      <li className="deel-step">
+        <div className="deel-step-badge">3</div>
+        <div className="deel-step-body">
+          <h3>Ship your first integration</h3>
+          <p>
+            Embed Deel into your product or internal tools using our REST API,
+            SDKs, and webhooks for worker lifecycle events.
+          </p>
+          <a href="/docs/examples" className="deel-link">
+            Explore integration patterns →
+          </a>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  {/* SECTION: QUICK LINKS */}
+
+  <section className="deel-section">
+    <header className="deel-section-header">
+      <h2>Developer essentials</h2>
+      <p>
+        Jump straight into the most important docs for building on Deel.
+      </p>
+    </header>
+
+    <div className="deel-grid deel-grid-2">
+      <article className="deel-link-card">
+        <h3>Authentication & security</h3>
+        <p>
+          Learn how to authenticate requests, manage API keys, and keep
+          data secure with least-privilege access.
+        </p>
+        <a href="/docs/authentication" className="deel-link">
+          View auth guide →
+        </a>
+      </article>
+
+      <article className="deel-link-card">
+        <h3>Workers & contracts</h3>
+        <p>
+          Model global workers, contracts, and entities in your product using
+          Deel’s unified data model.
+        </p>
+        <a href="/docs/workers" className="deel-link">
+          Browse worker API →
+        </a>
+      </article>
+
+      <article className="deel-link-card">
+        <h3>Payroll & payouts</h3>
+        <p>
+          Trigger payroll runs, track statuses, and reconcile payouts across
+          currencies and employment types.
+        </p>
+        <a href="/docs/payroll" className="deel-link">
+          See payroll endpoints →
+        </a>
+      </article>
+
+      <article className="deel-link-card">
+        <h3>Webhooks & events</h3>
+        <p>
+          Subscribe to lifecycle events for workers, contracts, and payroll
+          so your systems stay in sync.
+        </p>
+        <a href="/docs/webhooks" className="deel-link">
+          View webhook catalog →
+        </a>
+      </article>
+    </div>
+  </section>
+
+</div>

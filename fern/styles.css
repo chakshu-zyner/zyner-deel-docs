@@ -1,0 +1,905 @@
+/* -------- Deel docs landing page styles -------- */
+
+.deel-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 4.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Inter", sans-serif;
+}
+
+/* Hide the default H1 Fern renders at the very top */
+.fern-markdown > h1:first-of-type {
+  display: none;
+}
+
+/* HERO */
+
+.deel-hero {
+  display: flex;
+  gap: 3rem;
+  align-items: stretch;
+  background: radial-gradient(circle at top left, #f0f4ff 0, #ffffff 55%, #e7f4ff 100%);
+  border-radius: 32px;
+  padding: 2.75rem 2.5rem;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.10);
+  margin-bottom: 3.5rem;
+}
+
+.deel-hero-left,
+.deel-hero-right {
+  flex: 1;
+  min-width: 0;
+}
+
+.deel-hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.deel-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4f46e5;
+}
+
+.deel-hero-left h1 {
+  font-size: 2.4rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #020617;
+  margin: 0;
+}
+
+.deel-hero-body {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #0f172a;
+  max-width: 32rem;
+}
+
+.deel-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.deel-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.deel-hero-tags span {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.03);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  color: #0f172a;
+}
+
+/* HERO RIGHT */
+
+.deel-hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.deel-hero-pill {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-radius: 20px;
+  padding: 1.25rem 1.4rem;
+  color: #e5e7eb;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.6);
+}
+
+.deel-pill-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+  margin: 0 0 0.3rem;
+}
+
+.deel-pill-amount {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.deel-pill-caption {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  opacity: 0.75;
+}
+
+.deel-code-block {
+  margin: 0;
+  background: #020617;
+  color: #e5e7eb;
+  border-radius: 18px;
+  padding: 1rem 1.2rem;
+  font-family: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  border: 1px solid rgba(15, 23, 42, 0.9);
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.9);
+  overflow-x: auto;
+}
+
+.deel-hero-footnote {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* BUTTONS */
+
+.deel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  gap: 0.4rem;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.12s ease,
+    box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.deel-btn-primary {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.45);
+}
+
+.deel-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 40px rgba(37, 99, 235, 0.55);
+}
+
+.deel-btn-secondary {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: rgba(148, 163, 184, 0.6);
+}
+
+.deel-btn-secondary:hover {
+  background: #f8fafc;
+  border-color: rgba(100, 116, 139, 0.9);
+}
+
+.deel-btn-ghost {
+  background: transparent;
+  color: #020617;
+  border-color: rgba(148, 163, 184, 0.45);
+}
+
+.deel-btn-ghost:hover {
+  background: rgba(15, 23, 42, 0.03);
+}
+
+/* SECTIONS */
+
+.deel-section {
+  margin-bottom: 3.5rem;
+}
+
+.deel-section-title {
+  font-size: 1.5rem;
+  margin: 0 0 0.35rem;
+  color: #020617;
+}
+
+.deel-section-subtitle {
+  margin: 0 0 1.8rem;
+  color: #64748b;
+  font-size: 0.95rem;
+  max-width: 34rem;
+}
+
+/* CARD GRID */
+
+.deel-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.deel-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1.5rem 1.4rem;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.deel-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #020617;
+}
+
+.deel-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.deel-card ul {
+  margin: 0.4rem 0 0.4rem 1.1rem;
+  padding: 0;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.deel-card li + li {
+  margin-top: 0.25rem;
+}
+
+.deel-card-link {
+  margin-top: auto;
+  font-size: 0.85rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.deel-card-link:hover {
+  text-decoration: underline;
+}
+
+/* SPLIT SECTION */
+
+.deel-section-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 2.2rem;
+  align-items: start;
+}
+
+.deel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.deel-list-item h4 {
+  margin: 0 0 0.2rem;
+  font-size: 0.95rem;
+  color: #020617;
+}
+
+.deel-list-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* RIGHT COLUMN CARDS */
+
+.deel-stat-card {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e5e7eb;
+  border-radius: 20px;
+  padding: 1.3rem 1.4rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.65);
+}
+
+.deel-stat-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+  margin: 0 0 0.2rem;
+}
+
+.deel-stat-value {
+  margin: 0 0 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.deel-stat-footnote {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.deel-resource-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 1.2rem 1.3rem;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.deel-resource-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: #020617;
+}
+
+.deel-resource-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+}
+
+.deel-resource-card li + li {
+  margin-top: 0.25rem;
+}
+
+/* BOTTOM CTA */
+
+.deel-bottom-cta {
+  margin-top: 1rem;
+}
+
+.deel-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.8rem;
+  padding: 1.6rem 1.8rem;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e5e7eb;
+  box-shadow: 0 16px 45px rgba(15, 23, 42, 0.7);
+}
+
+.deel-bottom-inner h2 {
+  margin: 0 0 0.2rem;
+  font-size: 1.35rem;
+}
+
+.deel-bottom-inner p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+}
+
+.deel-bottom-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 960px) {
+  .deel-hero {
+    flex-direction: column;
+  }
+  .deel-section-split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .deel-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .deel-page {
+    padding-inline: 1.1rem;
+  }
+  .deel-hero {
+    padding: 2rem 1.5rem;
+  }
+  .deel-card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .deel-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ---------- Base layout wrapper ---------- */
+
+.deel-docs-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Inter", sans-serif;
+}
+
+/* ---------- Colors (approx Deel system) ---------- */
+
+:root {
+  --deel-bg: #050816;
+  --deel-bg-soft: #0b1020;
+  --deel-surface: #0f172a;
+  --deel-surface-soft: #111827;
+  --deel-text: #f9fafb;
+  --deel-muted: #9ca3af;
+  --deel-border: rgba(148, 163, 184, 0.3);
+
+  /* Brand */
+  --deel-yellow: #ffe27c; /* Kournikova */
+  --deel-lilac: #e9ddff; /* Perfume-like */
+  --deel-blue-soft: #d4ecff; /* French Pass-ish */
+  --deel-pill: rgba(15, 23, 42, 0.7);
+}
+
+/* Make the whole page feel like deel.com dark hero */
+body {
+  background: radial-gradient(circle at top left, #19223b 0, #050816 50%, #020617 100%);
+}
+
+/* ---------- HERO ---------- */
+
+.deel-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr);
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.deel-hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.deel-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--deel-pill);
+  color: var(--deel-text);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.deel-pill::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--deel-yellow);
+}
+
+.deel-hero-title {
+  font-size: 40px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--deel-text);
+}
+
+@media (min-width: 1024px) {
+  .deel-hero-title {
+    font-size: 48px;
+  }
+}
+
+.deel-hero-subtitle {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--deel-muted);
+  max-width: 520px;
+}
+
+.deel-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* Buttons */
+
+.deel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease,
+    background 0.12s ease, border-color 0.12s ease;
+}
+
+.deel-btn-primary {
+  background: var(--deel-yellow);
+  color: #18181b;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.deel-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 52px rgba(0, 0, 0, 0.6);
+}
+
+.deel-btn-ghost {
+  background: transparent;
+  color: var(--deel-text);
+  border-color: rgba(148, 163, 184, 0.5);
+}
+
+.deel-btn-ghost:hover {
+  background: rgba(15, 23, 42, 0.9);
+}
+
+/* Hero metadata (small pills) */
+
+.deel-hero-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.deel-hero-metadata li {
+  font-size: 12px;
+  color: var(--deel-muted);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+/* Right side hero illustration */
+
+.deel-hero-right {
+  position: relative;
+}
+
+.deel-hero-surface {
+  position: relative;
+  padding: 18px;
+  border-radius: 24px;
+  background: radial-gradient(
+      circle at top right,
+      rgba(255, 226, 124, 0.12),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(217, 249, 255, 0.16),
+      transparent 60%
+    ),
+    var(--deel-surface-soft);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 22px 70px rgba(15, 23, 42, 0.9);
+}
+
+/* floating badge */
+
+.deel-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--deel-text);
+  font-size: 11px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.deel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+}
+
+.deel-dot-yellow {
+  background: var(--deel-yellow);
+}
+
+/* code card */
+
+.deel-code-card {
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  backdrop-filter: blur(18px);
+}
+
+.deel-code-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: var(--deel-muted);
+}
+
+.deel-code-label {
+  font-weight: 500;
+}
+
+.deel-code-chip {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.deel-code-block {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #020617;
+  color: #e5e7eb;
+  font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+/* stats */
+
+.deel-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.deel-stat-card {
+  flex: 1 1 120px;
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 226, 124, 0.07),
+    rgba(56, 189, 248, 0.07)
+  );
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.deel-stat-label {
+  display: block;
+  font-size: 11px;
+  color: var(--deel-muted);
+  margin-bottom: 4px;
+}
+
+.deel-stat-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--deel-text);
+}
+
+/* ---------- Sections ---------- */
+
+.deel-section {
+  margin-top: 40px;
+}
+
+.deel-section-header {
+  max-width: 640px;
+  margin-bottom: 24px;
+}
+
+.deel-section-header h2 {
+  font-size: 22px;
+  margin: 0 0 8px;
+  color: var(--deel-text);
+  letter-spacing: -0.02em;
+}
+
+.deel-section-header p {
+  margin: 0;
+  color: var(--deel-muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* grid */
+
+.deel-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.deel-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.deel-grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* cards */
+
+.deel-card {
+  padding: 18px 18px 16px;
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.9),
+    rgba(15, 23, 42, 0.96)
+  );
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.9);
+}
+
+.deel-card-icon {
+  margin-bottom: 10px;
+}
+
+.deel-pill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: rgba(255, 226, 124, 0.12);
+  border: 1px solid rgba(250, 204, 21, 0.4);
+  font-size: 13px;
+}
+
+.deel-card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: var(--deel-text);
+}
+
+.deel-card p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--deel-muted);
+}
+
+.deel-card-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 12px;
+  color: var(--deel-muted);
+}
+
+/* steps section */
+
+.deel-section-surface {
+  margin-top: 48px;
+  padding: 20px 18px 18px;
+  border-radius: 22px;
+  background: radial-gradient(
+      circle at top left,
+      rgba(233, 221, 255, 0.16),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(212, 236, 255, 0.12),
+      transparent 60%
+    ),
+    var(--deel-bg-soft);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.deel-steps {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 900px) {
+  .deel-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.deel-step {
+  display: flex;
+  gap: 10px;
+}
+
+.deel-step-badge {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--deel-yellow);
+  color: #111827;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.deel-step-body h3 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: var(--deel-text);
+}
+
+.deel-step-body p {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: var(--deel-muted);
+}
+
+/* link cards */
+
+.deel-link-card {
+  padding: 16px 16px 14px;
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+}
+
+.deel-link-card h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: var(--deel-text);
+}
+
+.deel-link-card p {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--deel-muted);
+}
+
+/* generic links */
+
+.deel-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--deel-yellow);
+  text-decoration: none;
+}
+
+.deel-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Responsive tweaks ---------- */
+
+@media (max-width: 768px) {
+  .deel-docs-page {
+    padding-top: 32px;
+  }
+
+  .deel-hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deel-hero-right {
+    order: -1;
+  }
+}
+
